@@ -1,0 +1,46 @@
+<glasses.visual>
+	<node>
+		<identifier>	Scene Root	</identifier>
+		<transform>
+			<row0>	1.000000 0.000000 0.000000	</row0>
+			<row1>	0.000000 1.000000 0.000000	</row1>
+			<row2>	0.000000 0.000000 1.000000	</row2>
+			<row3>	0.000000 0.000000 0.000000	</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>	false	</treatAsWorldSpaceObject>
+		<node>	Scene Root	</node>
+		<geometry>
+			<vertices>	vertices	</vertices>
+			<primitive>	indices	</primitive>
+			<primitiveGroup>	0
+				<material>
+					<identifier>	glasses_mat	</identifier>
+					<fx>	shaders/std_effects/normalmap_specmap.fx	</fx>
+					<collisionFlags>	0	</collisionFlags>
+					<materialKind>	0	</materialKind>
+					<property>	specularMap
+						<Texture>	content/mods/glasses_diffuse.dds	</Texture>
+					</property>
+					<property>	selfIllumination
+						<Float>	0.000000	</Float>
+					</property>
+					<property>	doubleSided
+						<Bool>	false	</Bool>
+					</property>
+					<property>	normalMap
+						<Texture></Texture>
+					</property>
+					<property>	diffuseMap
+						<Texture>	content/mods/glasses_diffuse.dds	</Texture>
+					</property>
+				</material>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>	-0.130011 -0.027788 -0.004923	</min>
+		<max>	0.129858 0.032839 0.149861	</max>
+	</boundingBox>
+</glasses.visual>
