@@ -1,0 +1,28 @@
+<MLGGlasses.xml>
+	<TankTypes>LT,MT,HT</TankTypes> <!-- tank types on which glasses can be shown; separated by comma; possible values: LT,MT,HT,SPG,TD -->
+	<PlaySound>True</PlaySound> <!-- play a sound when dropping the glasses -->
+	<SoundDropOff>1500</SoundDropOff> <!-- this is a unit-less setting, the higher the value the slower the sound will fade out on distance-->
+	<animationHeight>5.0</animationHeight> <!-- this defines how high the glasses will spawn until they drop-->
+	<animationSpeed>0.5</animationSpeed><!-- this defines how fast they drop -->
+	<stayTime>8.0</stayTime> <!-- this defines how long the glasses will stay on the tank after they dropped -->
+	<ShowOnPlayer>True</ShowOnPlayer>
+	<ShowOnPlatoon>True</ShowOnPlatoon>
+	<ShowOnAllies>True</ShowOnAllies>
+	<ShowOnEnemies>True</ShowOnEnemies>
+	<Caliber>
+		<ShowOnBounce>True</ShowOnBounce> <!-- show when a shell bounces -->
+		<ShowOnRichochet>True</ShowOnRichochet> <!-- show when a shell ricochets -->
+		<TankTypes>LT</TankTypes> <!-- tank types on which glasses can be shown based on caliber; separated by comma; possible values: LT,MT,HT,SPG,TD -->
+		<Enabled>True</Enabled> <!-- show the glasses based on the caliber of the shell -->
+		<minCaliber>90.0</minCaliber> <!-- this defines what the minimum gun caliber is to spawn them-->
+	</Caliber>
+	<HP>
+		<ShowOnBounce>True</ShowOnBounce> <!-- show when a shell bounces -->
+		<ShowOnRichochet>True</ShowOnRichochet> <!-- show when a shell ricochets -->
+		<TankTypes>LT,MT,HT</TankTypes> <!-- tank types on which glasses can be shown based on HP; separated by comma; possible values: LT,MT,HT,SPG,TD -->
+		<Enabled>False</Enabled> <!-- show the glasses based on the HP of the tank -->
+		<maxHP>0.5</maxHP> <!-- glasses will only be shown when the tank has this much hp or less, value is a percentage-->
+	</HP>
+</MLGGlasses.xml>
+
+
